@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayakan HUT RI Ke-80 Bersama Osborn Rental Jakarta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ff0000, #ffffff, #ff0000);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 3px solid #ff0000;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: float 20s linear infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        .flag-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .announcement {
+            background: linear-gradient(135deg, #fff5f5, #ffe5e5);
+            border-left: 5px solid #ff0000;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .announcement h3 {
+            color: #cc0000;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .campaign-box {
+            background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+            border: 2px solid #0066cc;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .campaign-box::before {
+            content: '📸';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 40px;
+            opacity: 0.3;
+            transform: rotate(15deg);
+        }
+        
+        .campaign-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+        
+        .instagram-tag {
+            background: linear-gradient(45deg, #E1306C, #F56040, #FCAF45);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 15px 0;
+            font-size: 18px;
+            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+        }
+        
+        .benefits {
+            display: grid;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .benefit-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .social-links {
+            margin: 15px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .email-container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .campaign-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <div class="flag-icon">🇮🇩</div>
+            <h1>DIRGAHAYU REPUBLIK INDONESIA</h1>
+            <div class="subtitle">HUT RI Ke-80 | 17 Agustus 2025</div>
+        </div>
+        
+        <div class="content">
+            <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Selamat Hari Kemerdekaan Indonesia!</h2>
+            
+            <div class="announcement">
+                <h3>🎉 Kabar Gembira!</h3>
+                <p><strong>Pemerintah telah menetapkan Senin, 18 Agustus 2025 sebagai cuti bersama nasional</strong> untuk memeriahkan HUT RI Ke-80. Mari rayakan momen bersejarah ini dengan penuh semangat kebersamaan!</p>
+            </div>
+            
+            <p>Dalam rangka memeriahkan Hari Ulang Tahun Kemerdekaan Republik Indonesia yang ke-80, <strong>Osborn Rental Jakarta</strong> mengajak seluruh keluarga besar Indonesia untuk merayakan momen bersejarah ini dengan penuh sukacita.</p>
+            
+            <div class="campaign-box">
+                <div class="campaign-title">🎯 KAMPANYE KHUSUS 17 AGUSTUS</div>
+                <p style="margin-bottom: 15px; font-size: 16px;">Tunjukkan semangat nasionalisme Anda!</p>
+                
+                <div style="background: white; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <h4 style="color: #333; margin-bottom: 15px;">Caranya Mudah:</h4>
+                    <p style="margin-bottom: 10px;">1. Buat story Instagram yang meriah tentang perayaan 17 Agustus</p>
+                    <p style="margin-bottom: 10px;">2. Tag instagram kami:</p>
+                    <div class="instagram-tag">@osbornrental.jakarta</div>
+                    <p style="margin-bottom: 10px;">3. <strong>Story Anda akan kami repost di Instagram Story resmi Osborn!</strong></p>
+                </div>
+                
+                <p style="color: #666; font-style: italic;">Jadilah bagian dari kemeriahan nasional bersama ribuan followers kami!</p>
+            </div>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📢</div>
+                    <div>
+                        <strong>Exposure Maksimal</strong><br>
+                        Story Anda akan dilihat ribuan followers Osborn Rental Jakarta
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">🤝</div>
+                    <div>
+                        <strong>Membangun Komunitas</strong><br>
+                        Bergabung dengan komunitas nasionalis yang peduli kemerdekaan RI
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎊</div>
+                    <div>
+                        <strong>Meriahkan Perayaan</strong><br>
+                        Turut serta dalam pesta rakyat digital 17 Agustus yang meriah
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #fff8dc, #f5f5dc); padding: 20px; border-radius: 10px; margin: 25px 0;">
+                <h4 style="color: #b8860b; margin-bottom: 10px;">💡 Tips Story yang Menarik:</h4>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 8px;">🎨 Gunakan filter merah-putih atau tema Indonesia</li>
+                    <li style="margin-bottom: 8px;">🏛️ Foto di depan bendera atau tempat bersejarah</li>
+                    <li style="margin-bottom: 8px;">👨‍👩‍👧‍👦 Ajak keluarga ikut dalam perayaan</li>
+                    <li style="margin-bottom: 8px;">🎵 Tambahkan musik lagu kebangsaan</li>
+                </ul>
+            </div>
+            
+            <div class="cta-section">
+                <p style="margin-bottom: 20px; font-size: 16px;">Mari bersama-sama merayakan kemerdekaan dengan penuh kegembiraan dan optimisme!</p>
+                <a href="https://instagram.com/osbornrental.jakarta" class="cta-button">Follow Instagram Kami</a>
+            </div>
+            
+            <div class="contact-info">
+                <h4 style="color: #333; margin-bottom: 15px;">Butuh Rental Mobil untuk Acara 17 Agustus?</h4>
+                <p style="margin-bottom: 10px;">Osborn Rental Jakarta siap membantu kebutuhan rental Anda:</p>
+                <p><strong>📞 Telepon:</strong>0851 5543 1031</p>
+                <p><strong>📧 Email:</strong>marketing@osbornrental.com</p>
+                <p><strong>📍 Alamat:</strong>Jl. Nanas No.87, Utan Kayu Sel., Kec. Matraman, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13120</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>PT OSBORN MOBILITAS INDONESIA</strong></p>
+        </div>
+    </div>
+</body>
+</html>
